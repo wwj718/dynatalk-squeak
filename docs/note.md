@@ -1,7 +1,5 @@
 # note
 
-基于 `Squeak6-wwj-main-v3.image` 开发
-
 ## MQTT
 
 使用 [MQTT client for Squeak](http://www.squeaksource.com/@AO8HIZwUuPJcfD67/uiN0EOdv)
@@ -15,4 +13,5 @@
 使用 `Apps > SqueakMap Catelog`, update 之后搜索 mqtt, 得到 MQTT4Squeak。 安装最新版本会报错，使用以下命令手动安装:
 
 `(Installer repository: 'http://www.squeaksource.com/MQTTClient' ) install: 'MQTT-tpr.25.mcz'`
+
 
