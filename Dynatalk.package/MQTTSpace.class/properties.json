@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "wwj 3/19/2024 19:38",
 	"instvars" : [
-		 ],
+		"mqttClient",
+		"name" ],
 	"name" : "MQTTSpace",
 	"pools" : [
 		 ],
