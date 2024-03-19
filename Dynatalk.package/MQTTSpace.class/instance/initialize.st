@@ -1,4 +1,4 @@
-as yet unclassified
+initialize-release
 initialize
 	"sapce := MQTTSpace new."
 	name := 'mqtt space'.
