@@ -1,0 +1,14 @@
+{
+	"category" : "Dynatalk",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "wwj 3/19/2024 19:45",
+	"instvars" : [
+		 ],
+	"name" : "Agent",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

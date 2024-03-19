@@ -1,0 +1,14 @@
+{
+	"category" : "Dynatalk",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "wwj 3/19/2024 19:38",
+	"instvars" : [
+		 ],
+	"name" : "MQTTSpace",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
