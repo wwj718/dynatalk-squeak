@@ -1,0 +1,14 @@
+{
+	"category" : "DynatalkTests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"supervisor" ],
+	"name" : "SupervisorTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

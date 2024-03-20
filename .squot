@@ -1,3 +1,4 @@
 OrderedDictionary {
-	'Dynatalk.package' : #SquotCypressCodeSerializer
+	'Dynatalk.package' : #SquotCypressCodeSerializer,
+	'DynatalkTests.package' : #SquotCypressCodeSerializer
 }
