@@ -1,4 +1,4 @@
-as yet unclassified
+evaluating
 commit: aMessage 
 	"Invokes the action method"
 	| selector args |

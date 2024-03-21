@@ -1,4 +1,4 @@
-as yet unclassified
+sending
 respondWith: value
 
 	|template aMessage|

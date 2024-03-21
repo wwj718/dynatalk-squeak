@@ -1,4 +1,4 @@
-as yet unclassified
+sending
 raiseWith: error
 
 	|template aMessage|

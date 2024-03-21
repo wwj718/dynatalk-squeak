@@ -1,4 +1,4 @@
-as yet unclassified
+evaluating
 interpret: aMessage 
 	"The object interprets the message it understands. 
 	Only support keyword message"
