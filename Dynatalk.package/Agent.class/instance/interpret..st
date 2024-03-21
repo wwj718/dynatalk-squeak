@@ -1,5 +1,20 @@
 as yet unclassified
 interpret: aMessage 
-	aMessage action name = 'echo'
-		ifTrue: [^ self respondWith:  aMessage action args content.]
-		ifFalse: [^ self raiseWith: 'Message Not Understood: ', aMessage to, '>>', aMessage action name.]
+	"The object interprets the message it understands. 
+	Only support keyword message"
+	
+	self debugLog: 'received message:', aMessage asJsonString .
+	({responseActionName . errorActionName} includes: aMessage action name) 
+		ifTrue: [
+			"Handle incoming responses. Only useful when agent is used as callee"
+			
+			] 
+		ifFalse: [
+			"the caller requests the agent to execute the command"
+			self commit: aMessage.
+			]
+	
+	
+	
+	
+	

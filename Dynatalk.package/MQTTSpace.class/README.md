@@ -2,3 +2,7 @@ I am responsible for sending and receiving messages and understand the details o
 
 depend on MQTTClient(https://wiki.squeak.org/squeak/63), install it:  
 	(Installer repository: 'http://www.squeaksource.com/MQTTClient' ) install: 'MQTT-tpr.25.mcz'
+	
+get started:
+	space := MQTTSpace new.
+	

@@ -10,7 +10,8 @@
 		"id",
 		"currentMessage",
 		"responseActionName",
-		"errorActionName" ],
+		"errorActionName",
+		"selector" ],
 	"name" : "Agent",
 	"pools" : [
 		 ],
