@@ -1,0 +1,14 @@
+{
+	"category" : "DynatalkTests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"agent" ],
+	"name" : "AgentTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

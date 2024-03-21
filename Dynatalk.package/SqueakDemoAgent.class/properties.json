@@ -4,12 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "wwj 3/21/2024 14:14",
+	"commentStamp" : "",
 	"instvars" : [
-		"mqttClient",
-		"supervisor" ],
-	"name" : "MQTTSpace",
+		 ],
+	"name" : "SqueakDemoAgent",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "Agent",
 	"type" : "normal" }

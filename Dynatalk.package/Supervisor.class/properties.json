@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "wwj 3/19/2024 19:41",
 	"instvars" : [
-		 ],
+		"space",
+		"agents" ],
 	"name" : "Supervisor",
 	"pools" : [
 		 ],

@@ -1,0 +1,14 @@
+{
+	"category" : "DynatalkTests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"agent" ],
+	"name" : "SqueakDemoAgentTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

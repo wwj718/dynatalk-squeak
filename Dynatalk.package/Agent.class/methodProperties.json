@@ -2,4 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"currentMessage:" : "wwj 3/20/2024 21:05",
+		"id" : "wwj 3/20/2024 21:19",
+		"id:supervisor:" : "wwj 3/21/2024 09:01",
+		"initialize" : "wwj 3/20/2024 20:47",
+		"interpret:" : "wwj 3/21/2024 14:03",
+		"raiseWith:" : "wwj 3/21/2024 14:00",
+		"receive:" : "wwj 3/20/2024 18:31",
+		"respondWith:" : "wwj 3/21/2024 13:56",
+		"send:" : "wwj 3/21/2024 09:09" } }

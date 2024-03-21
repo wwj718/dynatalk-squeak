@@ -6,7 +6,11 @@
 		 ],
 	"commentStamp" : "wwj 3/19/2024 19:45",
 	"instvars" : [
-		 ],
+		"supervisor",
+		"id",
+		"currentMessage",
+		"responseActionName",
+		"errorActionName" ],
 	"name" : "Agent",
 	"pools" : [
 		 ],
