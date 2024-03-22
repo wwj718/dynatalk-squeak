@@ -7,5 +7,5 @@ request: aMessage timeout: aNumber
 	"Use fork to support timeout"
 	[(Delay forSeconds: aNumber) wait.
 	(p isResolved or: p isRejected) not
-		ifTrue: [p rejectWith: 'timeout(' , aNumber , ')']] fork.
+		ifTrue: [p rejectWith: 'request(', messageID, ') timeout(' , aNumber , ')']] fork.
 	^ p
