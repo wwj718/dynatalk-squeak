@@ -2,4 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "wwj 3/21/2024 09:06" } }
+		"setUp" : "wwj 3/21/2024 09:06",
+		"testRequestReject" : "wwj 3/22/2024 16:05",
+		"testRequestResponse" : "wwj 3/22/2024 15:54",
+		"testRequestTimeout" : "wwj 3/22/2024 16:20",
+		"xtestSend" : "wwj 3/22/2024 15:30" } }

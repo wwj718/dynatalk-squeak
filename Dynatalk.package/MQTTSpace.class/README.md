@@ -6,3 +6,5 @@ depend on MQTTClient(https://wiki.squeak.org/squeak/63), install it:
 get started:
 	space := MQTTSpace new.
 	
+tips
+	MQTTSpace allInstances first

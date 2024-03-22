@@ -11,7 +11,7 @@
 		"currentMessage",
 		"responseActionName",
 		"errorActionName",
-		"selector" ],
+		"promises" ],
 	"name" : "Agent",
 	"pools" : [
 		 ],
