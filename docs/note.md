@@ -36,3 +36,11 @@
     -  Json new readFrom: aString readStream. 获得一个JsonObject
     -   aJsonObject asJsonString
         -   aJsonObject 是 Dictionary
+-   对象生命周期
+    -   Squeak 在开发期间可能会反复创建对象, 让系统自动管理。
+        -   把image看作操作系统是更合适的，不应该经常从0开始(如Python)，而把它看作像生物一样持续成长的东西。
+        -   只要没有被全局和thisContext应用的就会被回收, 参考"Working with the ecosystem of objects in a Smalltalk image."
+    -   只需要维护与外部 io 交互的即可, 如 MQTTClient
+    -   对象是"活的", 代码是死的。
+        -   开发的时候, 保存 image 有很多好处(进行实验)。
+        -   部署的时候, 应该保持启动 image(活的对象池) 的干净, 启动的的时候才激活被git版本的代码。
