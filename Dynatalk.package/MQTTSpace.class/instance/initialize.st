@@ -1,8 +1,6 @@
 initialize-release
 initialize
-	
-	"sapce := MQTTSpace new."
-	""
+	"Make sure there is only one mqtt client"
 	MQTTClient allInstances do: [:client | client disconnect ].
 	
 	mqttClient := MQTTClient new.

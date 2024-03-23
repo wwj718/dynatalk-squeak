@@ -1,2 +1,4 @@
 accessing
-getAgent: aSymbol
+getAgent: agentID
+
+	^ agents at: agentID ifAbsent: [].

@@ -1,1 +1,4 @@
 I am responsible for looking after a group of agents (including managing their lifecycle). I am like a concierge. Whenever I receive a message from space, I will check the recipient of the message and deliver the message to that agent. If the agent wants to send out a message, it will give it to me first, and then I will forward it to the space.
+
+supervisor := Supervisor new.
+supervisor getAgent: 'SqueakDemoAgent'
