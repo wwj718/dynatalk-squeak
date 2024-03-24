@@ -1,0 +1,14 @@
+{
+	"category" : "Dynatalk",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "DynatalkEnv",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
