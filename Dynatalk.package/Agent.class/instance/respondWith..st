@@ -1,22 +1,9 @@
-sending
+public api
 respondWith: value
 
-	|template aMessage|
-	template  := '{
-					    "meta": {"parent_id": ""},
-					    "to": "",
-					    "action": {
-					        "name": "",
-					        "args": {
-					            "value": ""
-					        }
-					    }
-					}'.
-	aMessage := Json readFrom: template readStream.
-	aMessage meta at: 'parent_id' put: currentMessage meta id.
-	aMessage at: 'to' put: currentMessage from.
-	aMessage action at: 'name' put: responseActionName.
-	aMessage action args at: 'value' put: value.
+	|aMessage aJsonString|
+	aJsonString := JsonObject new at: 'value' put: value; asJsonString.
+	aMessage := self generateMessage: currentMessage meta id to: currentMessage from actionName: responseActionName actionArgs: aJsonString.
 	self send: aMessage.
 	
 	^ aMessage 
