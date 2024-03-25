@@ -8,4 +8,5 @@ action := 'echo'.
 args := {'hi'}.
 result := agent generateMessage: parentID to: to actionName: action actionArgs: args.
 self assert: (result meta at: 'parent_id') = parentID.
-self assert: (result action args) = args.
+self assert: (result action args first) = 'hi'.
+

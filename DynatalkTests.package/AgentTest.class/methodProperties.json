@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"setUp" : "wwj 3/21/2024 09:06",
-		"testGenerateMessage" : "wwj 3/25/2024 09:27",
+		"testGenerateMessage" : "wwj 3/25/2024 10:54",
 		"testRequestReject" : "wwj 3/24/2024 11:23",
 		"testRequestResponse" : "wwj 3/24/2024 11:22",
 		"testRequestTimeout" : "wwj 3/24/2024 11:21" } }

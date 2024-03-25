@@ -21,7 +21,8 @@ aMessage := messageString parseAsJson.
 
 parentID ifNotNil: [aMessage meta at: 'parent_id' put: parentID].
 aMessage meta at: 'id' put: UUID new makeUUID asString.
-aMessage meta at: 'to' put: to.
+aMessage  at: 'to' put: to.
+aMessage  at: 'from' put: id. "auto"
 aMessage action at: 'name' put: action.
 aMessage action at: 'args' put: args.
 
