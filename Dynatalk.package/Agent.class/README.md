@@ -6,4 +6,4 @@ Generally speaking, agents running in the system are instantiated from my subcla
 (agent request: 'PyDemoAgent' action: 'echo' args: '{"content": "hi"}') wait.
 
 "send"
-agent send 'SqueakDemoAgent' action: 'echo:' args: {'hi'.}) 
+agent send 'SqueakDemoAgent' action: 'echo:' args: {'hi'.}.

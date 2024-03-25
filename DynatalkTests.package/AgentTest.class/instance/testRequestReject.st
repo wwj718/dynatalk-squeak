@@ -1,10 +1,10 @@
 as yet unclassified
 testRequestReject
 
-|aMessage aJsonObject aPromise errorString|
+|aJsonString aJsonObject aPromise errorString|
 
 
-aMessage:='
+aJsonString :='
 {
   "meta": {
         "id": "testError"
@@ -19,7 +19,7 @@ aMessage:='
 }
 '.
 
-aJsonObject := Json readFrom: aMessage readStream.
+aJsonObject := aJsonString parseAsJson.
 
 aPromise := agent request: aJsonObject.
 aPromise  then: [:v|  agent debugLog: 'then:', v] ifRejected: [:e | agent debugLog: 'reject: ', e].
@@ -42,4 +42,4 @@ errorString := '
 }
 '.
 
-agent receive: (Json readFrom: errorString readStream).
+agent receive: errorString parseAsJson.

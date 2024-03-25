@@ -21,7 +21,7 @@ aString  := '
 
 returnValue := 'return value'.
 
-aMessage := Json readFrom: aString readStream.
+aMessage := aString parseAsJson.
 
 agent currentMessage: aMessage.
 

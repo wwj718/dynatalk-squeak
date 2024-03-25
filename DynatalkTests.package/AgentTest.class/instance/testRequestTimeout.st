@@ -1,10 +1,10 @@
 as yet unclassified
 testRequestTimeout
 
-|aMessage aJsonObject aPromise|
+|aJsonString aJsonObject aPromise|
 
 
-aMessage:='
+aJsonString :='
 {
   "meta": {
         "id": "testTimeout"
@@ -19,7 +19,7 @@ aMessage:='
 }
 '.
 
-aJsonObject := Json readFrom: aMessage readStream.
+aJsonObject := aJsonString parseAsJson.
 
 aPromise := agent request: aJsonObject timeout: 3.
 aPromise  then: [:v|  agent debugLog: 'then:', v] ifRejected: [:e | agent debugLog: 'reject: ', e].

@@ -2,7 +2,7 @@ initialize-release
 initialize
 	"Make sure there is only one mqtt client"
 	|mqttEnv|
-	MQTTClient allInstances do: [:client | client disconnect ].
+	[MQTTClient allInstances do: [:client | client disconnect ].] on: Error do: [:e | self debugLog: e asString] .
 	
 	
 	mqttEnv := DynatalkEnv MQTTEnv parseAsJson.

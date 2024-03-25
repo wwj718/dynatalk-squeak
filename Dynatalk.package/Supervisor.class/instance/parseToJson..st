@@ -1,7 +1,7 @@
 converting
 parseToJson: aString 
 	| aJsonObject |
-	aJsonObject := [Json readFrom: aString readStream]
+	aJsonObject := [aString parseAsJson]
 				on: JsonInvalidError
 				do: [:e | 
 					"Transcript showln: '(Supervisor) ' , e printString."

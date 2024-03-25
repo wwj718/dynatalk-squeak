@@ -1,10 +1,9 @@
 as yet unclassified
 testRequestResponse
 
-|aMessage aJsonObject aPromise response|
+|aJsonString aJsonObject aPromise response|
 
-
-aMessage:='
+aJsonString :='
 {
   "meta": {
         "id": "testResponse"
@@ -19,7 +18,7 @@ aMessage:='
 }
 '.
 
-aJsonObject := Json readFrom: aMessage readStream.
+aJsonObject := aJsonString parseAsJson.
 
 aPromise := agent request: aJsonObject.
 aPromise  then: [:v|  agent debugLog: 'then:', v] ifRejected: [:e | self error: 'reject:', e].
@@ -43,5 +42,5 @@ response := '
 }
 '.
 
-agent receive: (Json readFrom: response readStream). 
+agent receive: response parseAsJson .
 

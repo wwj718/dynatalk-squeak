@@ -1,23 +1,28 @@
 as yet unclassified
 generateMessage: parentID to: to actionName: action actionArgs: args
 
-|messageString msgID parentIDString|
+|messageString aMessage|
 
-msgID := UUID  new makeUUID asString.
-parentIDString := parentID ifNil: [''] ifNotNil: ['"parent_id": "', parentID, '",' ].
 messageString := '
-\{
-    "meta": \{
-	  {2}
-        "id": "{1}"
-    \},
-    "to": "{3}",
-    "action": \{
-        "name": "{4}",
-        "args": {5}
-    \},
-    "from": "{6}"
-\}
-' format: {msgID . parentIDString . to . action . args . id}. 
+{
+    "meta": {
+        "id": ""
+    },
+    "from": "",
+    "to": "",
+    "action": {
+        "name": "",
+        "args": ""
+    }
+}
+'.
 
-^ Json readFrom: messageString readStream.
+aMessage := messageString parseAsJson.
+
+parentID ifNotNil: [aMessage meta at: 'parent_id' put: parentID].
+aMessage meta at: 'id' put: UUID new makeUUID asString.
+aMessage meta at: 'to' put: to.
+aMessage action at: 'name' put: action.
+aMessage action at: 'args' put: args.
+
+^ aMessage.
