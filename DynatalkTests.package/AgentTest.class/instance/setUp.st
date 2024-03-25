@@ -3,4 +3,5 @@ setUp
 
 "Beeper beep."
 agent := Agent new.
-agent id: 'Agent' supervisor: nil.
+agent id: 'Agent' .
+agent supervisor: nil.

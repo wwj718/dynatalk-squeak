@@ -1,0 +1,14 @@
+{
+	"category" : "Dynatalk",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SqueakEvalAgent",
+	"pools" : [
+		 ],
+	"super" : "Agent",
+	"type" : "normal" }
