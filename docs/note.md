@@ -22,6 +22,9 @@
 ## 调试技巧
 
 - `Beeper beep`: 检查代码是否运行到某处, john 推荐
+- debugging
+    -   debugLog
+    -   使用 _logs list, 避免使用 transcript
 
 ## 开发笔记
 -   犯了错误 `1>2 ifTrue:(Beeper beep)` , 如果不是blocks, 永远会运行, 正确: `1>2 ifTrue:[Beeper beep]`
