@@ -9,6 +9,9 @@ interpret: aMessage
 	aMessage action name = responseActionName 
 		ifTrue: [
 			"Handle incoming response. Only useful when agent is used as callee"
+			"process help response"
+			aMessage meta help ifNotNil: [availableActions at: aMessage from put: aMessage action args value].
+			
 			"process _promises"
 			aPromise := (promises at: (aMessage meta at: 'parent_id') ifAbsent: []).
 			aPromise ifNotNil: [aPromise resolveWith: (aMessage action args at: 'value')].

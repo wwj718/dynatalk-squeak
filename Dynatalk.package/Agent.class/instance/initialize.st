@@ -5,4 +5,5 @@ initialize
 	
 	id := self class asString .
 	promises := Dictionary new.
+	availableActions := Dictionary new.
 	
