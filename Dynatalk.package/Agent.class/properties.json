@@ -12,7 +12,8 @@
 		"responseActionName",
 		"errorActionName",
 		"promises",
-		"availableActions" ],
+		"availableActions",
+		"broadcastFlag" ],
 	"name" : "Agent",
 	"pools" : [
 		 ],
