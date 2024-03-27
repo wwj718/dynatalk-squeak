@@ -1,3 +1,3 @@
-as yet unclassified
+actions
 echo: aString
 	self respondWith: aString
