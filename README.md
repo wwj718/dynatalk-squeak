@@ -15,11 +15,19 @@
 
 ```st
 supervisor := Supervisor new.
-agent := supervisor getAgent: 'SqueakDemoAgent'.
-"(agent request: 'LivelyDemoAgent' action: 'echo' args: {'hi'}) wait."
-(agent request: 'SqueakDemoAgent' action: 'echo:' args: {'hi'}) wait.  "print it"
+agent := SqueakDemoAgent new id: 'SqueakDemoAgent'.
+supervisor addAgent: agent.
 
-"sendTo"
+"print it"
+(agent request: 'SqueakDemoAgent' action: 'ping' args: {}) wait. 
+(agent request: 'SqueakDemoAgent' action: 'help' args: {}) wait.   
+(agent request: 'SqueakDemoAgent' action: 'echo:' args: {'hi'}) wait.  
+(agent request: 'SqueakDemoAgent' action: 'add:to:' args: {1 . 2}) wait.  
+
+
+"(agent request: 'LivelyDemoAgent' action: 'echo' args: {'hi'}) wait."
+
+"sendTo, do it"
 agent sendTo: 'SqueakDemoAgent' action: 'echo:' args: {'hi'}
 ```
 

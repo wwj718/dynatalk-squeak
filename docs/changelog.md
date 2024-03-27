@@ -2,6 +2,17 @@
 
 ## dynatalk
 
+### 0.6.0(2024-03-27)
+
+- Agent 
+    -   理解: `ping` (用于在线检测)
+    -   支持 broadcast
+        -   新增 broadcastHelp 方法
+            -   help 相关功能是可选的(完全实现在 agent 内)。有些环境 MicroBlocks, 可能只需提供 help action 即可。不需要实现 broadcastHelp
+- SqueakDemoAgent 
+    -   理解 `help`
+    
+ 
 ### 0.5.0(2024-03-25)
 
 -   public api
@@ -9,7 +20,7 @@
         -   request
         -   sendTo
     -   server
-        -   responseWith
+        -   respondWith
         -   raiseWith
 -   仅使用一层的 args list 传递参数(和MicroBlocks一致)
 -   使用 generateMessage 简化消息相关的方法
