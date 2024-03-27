@@ -13,7 +13,7 @@ helpJsonString := '
         "description": "add a and b",
         "args": ["aNumber", "aNumber"]
     },
-    "echo": {
+    "echo:": {
         "description": "echo the content",
         "args": ["aString"]
     }
