@@ -1,4 +1,4 @@
-sending
+public api
 helpRespondWith: value
 	"Add help flag in meta"
 	

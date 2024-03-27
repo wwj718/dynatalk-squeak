@@ -10,7 +10,8 @@ interpret: aMessage
 		ifTrue: [
 			"Handle incoming response. Only useful when agent is used as callee"
 			"process help response"
-			aMessage meta help ifNotNil: [availableActions at: aMessage from put: aMessage action args value].
+			(aMessage action args value class = JsonObject and: aMessage action args value help class = JsonObject) 
+				ifTrue: [availableActions at: aMessage from put: aMessage action args value help].
 			
 			"process _promises"
 			aPromise := (promises at: (aMessage meta at: 'parent_id') ifAbsent: []).

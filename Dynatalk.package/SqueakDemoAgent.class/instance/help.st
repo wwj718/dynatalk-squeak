@@ -20,4 +20,4 @@ helpJsonString := '
 }
 '.
 
-self helpRespondWith: helpJsonString parseAsJson.
+self respondWith: (JsonObject new at: 'help' put:  helpJsonString parseAsJson)
