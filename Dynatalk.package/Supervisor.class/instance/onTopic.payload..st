@@ -1,4 +1,4 @@
-as yet unclassified
+receiving
 onTopic: topicString payload: aPayload 
 	"Note that the message payload is not in any way guaranteed to be a String"
 	| message agent |
@@ -7,9 +7,7 @@ onTopic: topicString payload: aPayload
 	"nil if message is invalid"
 	message
 		ifNotNil: [Transcript showln: '(Supervisor) valid message: ' , message.
-			agent := agents
-						at: message to
-						ifAbsent: [].
-			agent
-				ifNotNil: [agent receive: message].
+			(message to = broadcastFlag) ifTrue: [agents do: [ :i | i receive: message]].
+			agent := agents at: message to ifAbsent: [].
+			agent ifNotNil: [agent receive: message].
 		]

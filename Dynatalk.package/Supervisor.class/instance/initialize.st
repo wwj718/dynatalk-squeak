@@ -1,8 +1,10 @@
 initialize-release
 initialize
 	
+	broadcastFlag := '[broadcast]'.
+	
 	agents := Dictionary new.
-	self initAgents.
+	"self initAgents."
 	
 	space :=MQTTSpace new supervisor: self.
 	

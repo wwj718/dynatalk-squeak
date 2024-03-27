@@ -4,10 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "wwj 3/23/2024 10:48",
+	"commentStamp" : "wwj 3/27/2024 11:33",
 	"instvars" : [
 		"space",
-		"agents" ],
+		"agents",
+		"broadcastFlag" ],
 	"name" : "Supervisor",
 	"pools" : [
 		 ],
