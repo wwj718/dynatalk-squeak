@@ -1,6 +1,6 @@
 as yet unclassified
-receive: aMessage
-	currentMessage := aMessage.
+receive: aPayload
+	"String?"
 	
-	self recording ifTrue: [self addMessage: aMessage.]
+	self recording ifTrue: [self addMessage: aPayload asString .]
 	
