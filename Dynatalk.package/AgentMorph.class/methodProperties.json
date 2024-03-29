@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"additionsToViewerCategories" : "wwj 3/29/2024 17:51" },
+	"instance" : {
+		"actionName" : "wwj 3/29/2024 16:17",
+		"actionName:" : "wwj 3/29/2024 17:34",
+		"agent" : "wwj 3/29/2024 16:47",
+		"arg1:" : "wwj 3/29/2024 16:16",
+		"arg2:" : "wwj 3/29/2024 16:16",
+		"initialize" : "wwj 3/29/2024 17:05",
+		"openAgentViewer" : "wwj 3/29/2024 16:47",
+		"openMorphViewer" : "wwj 3/29/2024 16:47",
+		"request" : "wwj 3/29/2024 16:48",
+		"send" : "wwj 3/29/2024 16:48",
+		"targetAgent" : "wwj 3/29/2024 16:17",
+		"targetAgent:" : "wwj 3/29/2024 16:17" } }

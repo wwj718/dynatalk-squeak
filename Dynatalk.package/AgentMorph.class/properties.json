@@ -1,0 +1,19 @@
+{
+	"category" : "Dynatalk",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "wwj 3/29/2024 16:54",
+	"instvars" : [
+		"agent",
+		"targetAgent",
+		"actionName",
+		"actionArgs",
+		"arg1",
+		"arg2" ],
+	"name" : "AgentMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }
