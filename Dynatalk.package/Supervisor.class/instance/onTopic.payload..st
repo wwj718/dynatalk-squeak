@@ -7,6 +7,7 @@ onTopic: topicString payload: aPayload
 	"nil if message is invalid"
 	message
 		ifNotNil: [Transcript showln: '(Supervisor) valid message: ' , message.
+			monitor receive: message.
 			(message to = broadcastFlag) ifTrue: [agents do: [ :i | i receive: message]].
 			agent := agents at: message to ifAbsent: [].
 			agent ifNotNil: [agent receive: message].

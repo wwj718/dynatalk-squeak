@@ -1,11 +1,10 @@
 initialize-release
 initAgents
 	|agent|
-	"for service"
+	"as services"
 	
 	agent := SqueakDemoAgent new id: 'SqueakDemoAgent'.
-	agents at: agent id put: agent.
-	agent supervisor: self.
+	self addAgent: agent
 	
 	"agent debugging ifTrue: [agent inspect.]."
 	
